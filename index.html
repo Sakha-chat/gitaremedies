@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -10,16 +10,18 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="navparticles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+      
+    </style>
     <title>Gita Remedies</title>
-    <!-- Bootstrap -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
-
-    <!-- CSS -->
     <link rel="stylesheet" href="css/chat100.css" />
     <link rel="stylesheet" href="css/header-900.css" />
     <link rel="stylesheet" href="css/stylee100.css" />
@@ -30,46 +32,10 @@
     <script src="main.js" defer></script>
   </head>
   <body>
-    <header class="site-header">
-      <div class="wrapper1 site-header__wrapper">
-        <div class="site-header__start">
-          <img src="./images/tempLogo.PNG" class="nav-temp-logo" alt="" />
-          <!-- <a href="#" class="brand">SAKHA</a> -->
-        </div>
-        <div class="site-header__middle">
-          <nav class="nav">
-            <ul class="nav__wrapper">
-              <li class="nav__item">
-                <a href="https://sakha.chat">Home</a>
-              </li>
-              <li class="nav__item">
-                <a href="#">Gita Remedies</a>
-                <li class="nav__item">
-                <a href="https://vedic.sakha.chat">Vedic Granths</a>
-              </li>
-                  <li class="nav__item">
-                <a href="http://amanchopra.org.in">Our Team</a>
-              </li>
-
-              <!-- <li class="nav__item"><a href="#" style="font-size: 20px;">Contact</a></li> -->
-            </ul>
-          </nav>
-        </div>
-        <div class="site-header__end">
-          <a
-            class="button1"
-            href="/logout"
-            >Log Out</a
-          >
-        </div>
-        <div id="toggle">
-            <i class="indicator"><img src="images/moon.png" alt="" id="icon"onclick="myFunction()" onmouseover="displayMessage()" onmouseout="hideMessage()"></i>
-        </div>
-      </div>
-    </header>
-
+    <div class="spiritual-particles" id="particles"></div>
     <div class="container">
       <h1>Gita Remedies</h1>
+      <img src="c.png" alt="" width="300px">
       <div id="dropdown">
         <label for="problem">What are you Suffering from?</label>
         <select id="problem" onchange="showShloks()">
@@ -99,6 +65,24 @@
       <div class="shloks" id="shloks">
         <!-- Shloks will be displayed here -->
       </div>
+      <nav class="navigation">
+        <a href="https://sakha-chat.vercel.app" class="nav-item">
+          <i class="fas fa-home"></i><span>Home</span>
+        </a>
+        <a href="https://vedic.sakha.chat" class="nav-item nav-active">
+          <i class="fas fa-book"></i><span>Books</span>
+        </a>
+        <a href="https://sakha-five.vercel.app/mala.html" class="nav-item">
+          <i class="fas fa-om"></i><span>Chanting</span>
+        </a>
+        <a href="" class="nav-item">
+          <i class="fas fa-leaf"></i><span>Remedies</span>
+        </a>
+        <a href="https://game.sakha.chat/" class="nav-item">
+          <i class="fas fa-gamepad"></i><span>Game</span>
+        </a>
+      </nav>
     </div>
+<script src="particles.js"></script>
   </body>
-</html>
+                                       </html>
